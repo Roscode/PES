@@ -11,6 +11,10 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 from __future__ import print_function
 
-def is_three_five()
-for x in xrange(10):
-    return x if x % 3 is 0
+VALID = []
+
+for x in xrange(1000):
+    if x != 0 and (x % 3 == 0 or x % 5 == 0):
+        VALID.append(x)
+
+print(sum(VALID))
