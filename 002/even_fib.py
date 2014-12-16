@@ -18,3 +18,16 @@ from __future__ import print_function
 
 ANSWER = 0
 
+def fib(first=1, second=2):
+    """Fibonacci generator function"""
+    while 1:
+        if first % 2 == 0:
+            yield first
+        if second > 4e6:
+            break
+        first, second = second, first + second
+
+for i in fib():
+    ANSWER += i
+
+print(ANSWER)
