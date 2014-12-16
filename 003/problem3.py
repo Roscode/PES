@@ -18,3 +18,5 @@ def greatestprimefactor():
             n = n/prime
         prime+=1
     print(n)
+greatestprimefactor()
+#the answer is 6857
