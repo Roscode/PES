@@ -16,8 +16,8 @@ ANSWER = []
 
 for i in xrange(1, 1000):
     for j in xrange(1, 1000):
-        test = str(i * j)
-        if test == test[::-1]:
-            ANSWER.append(int(test))
+        possible = str(i * j)
+        if possible == possible[::-1]:
+            ANSWER.append(int(possible))
 
 print(max(ANSWER))
